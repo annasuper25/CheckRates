@@ -19,7 +19,7 @@ localhost:8080/gif
 её можно включать и выключать, установив значение true либо false.
 
 При равенстве курсов валют, если эта настройка включена (true), будет выводиться рандомная GIF с тэгом "mem" (запрос 
-https://giphy.com/search/mem),
+https://giphy.com/search/mem)
 а если она выключена (false), то ничего не будет выведено.
 
 Тэги для 3-х возможных результатов сравнения курсов также вынесены в файл application.properties и могут быть легко изменены:
@@ -30,6 +30,7 @@ main.rate-flat-tag:mem
 
 
 ИНСТРУКЦИЯ ПО ЗАПУСКУ ПРИЛОЖЕНИЯ
+*Требуется Gradle 6.3 или новее.
 
 1. Открыть командную строку (cmd)
 
@@ -51,7 +52,7 @@ gradle.bat clean build (для Windows)
 cd build/libs
 
 7. Запустить проект командой:
-java jar check-rates-api-0.0.1-SNAPSHOT.jar
+java -jar check-rates-api-0.0.1-SNAPSHOT.jar
 
 Готово. Приложение запущено.
 

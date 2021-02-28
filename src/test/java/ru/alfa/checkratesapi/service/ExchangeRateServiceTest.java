@@ -46,6 +46,9 @@ public class ExchangeRateServiceTest {
                 .thenReturn(createExchangeRatesResponse(73.5));
         when(gifyClient.getRandomGif(properties.getGiffyAppId(), properties.getRateUpTag())).thenReturn(createGifyResponse("rich.mp4"));
 
+		String url = exchangeRateService.getGifUrl();
+
+		Assertions.assertEquals("rich.mp4", url);
 
     }
 
